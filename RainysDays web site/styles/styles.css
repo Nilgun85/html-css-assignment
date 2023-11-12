@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+    --main-color: #FFFFFF;
+    --black-color: #000000;
+    --blue-color: #6B84C4;
+    --border: solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: o.2s ease;
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FFFFFF;
+
+}
+
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: lightgray;
+
+
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.heading {
+    color: #6B84C4;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+/*! header start */
+.header .logo img {
+    height: 5rem;
+}
+
+.header {
+    background-color: #6B84C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 0rem;
+    border-radius: 0rem;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    border-bottom: 0.1rem solid transparent;
+
+}
+
+.header .navbar .active {
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+
+}
+
+
+
+.header .button button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+/*! header end */
+
+/*! home start */
+.home {
+    min-height: 100vh;
+    background: url(https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-one/070b990270cc7b40f4dc28c26c2cb183d3d2905b/pictures.jpg/istockphoto-904172104-612x612.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+/*! home end */
+
+/*! product start */
+.product {
+    padding: 3.5rem 7%;
+    text-align: center;
+}
+
+.heading {
+    color: #6B84C4;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box {
+    width: 100%;
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 60rem;
+}
+
+.product-img {
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.see-more {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+
+
+/*! product end */
+
+/*! footer start */
+section {
+    padding: 80px 13% 70px;
+}
+
+.footer {
+    background-color: #6B84C4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.footer-content h4 {
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content li {
+    margin-bottom: 14px;
+}
+
+.footer-content li a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Logo'yu dikeyde ortalar */
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: 60px;
+}
+
+
+/*! footer end */
+
+/*! responsive start */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.header {
+    padding: 1.5 2rem;
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.product .box-container .box .img {
+    font-size: 3.4px;
+}
+
+
+.header .navbar .active {
+    right: 3rem;
+}
+
+.header .navbar .a {
+    color: #FFFFFF;
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+
+}
+
+/*! responsive end */

@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+    --main-color: #FFFFFF;
+    --black-color: #000000;
+    --blue-color: #6B84C4;
+    --red-color: #F35858;
+    --blue-color: #587AD4;
+    --black-color: #212737;
+    --purple-color: #D028D3;
+    --border: solid rgba(255, 255, 255, 0.4);
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: o.2s ease;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FFFFFF;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: lightgray;
+
+
+}
+
+body {
+    background-color: var(--main-color);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-color: #6B84C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    border-bottom: 0.1rem solid transparent;
+    padding: 20px;
+
+}
+
+.header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .button button {
+    cursor: pointer;
+    font-size: 4rem;
+    margin-left: 3rem;
+    background-color: transparent;
+}
+
+.header .navbar button i {
+    font-size: 35px;
+
+}
+
+
+
+
+.product-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.product-navigation a.light-text {
+    color: lightgray;
+}
+
+.product-navigation a.dark-text {
+    color: #000;
+}
+
+.product-navigation .buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.product-navigation .buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.product-navigation .buttons button i {
+    color: lightgray;
+    font-size: 18px;
+}
+
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.product-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    color: #000;
+    padding: 10px;
+}
+
+.shadowed-image {
+    transform: scale(0.50);
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    font-size: 24px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.product-details h3 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-details .price {
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+.text {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    /* Sayfanın sağ üst köşesine taşır */
+    text-align: left;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-information {
+    font-size: 20px;
+    margin: 0;
+}
+
+.product-size {
+    font-size: 20px;
+    /* Size yazısının stilini ayarlayabilirsiniz */
+    margin-top: 15px;
+    /* Size yazısını metinden ayırır */
+}
+
+.size-boxes {
+    display: flex;
+    align-items: center;
+    /* Kutuları dikey olarak hizalamak için */
+    margin-top: 10px;
+    /* Size yazısı ile kutular arasına boşluk eklemek için */
+}
+
+.size-box {
+    border: 1px solid #000;
+    /* Kenarlık eklemek isterseniz */
+    padding: 5px 10px;
+    /* Daha fazla stil eklemek isterseniz */
+    margin: 0 5px;
+    /* Kutular arası boşluk eklemek isterseniz */
+    background-color: #E8EDFB;
+    /* Kutu arka plan rengi (mavi) */
+    color: #000;
+    /* Kutu içindeki yazı rengi (beyaz) */
+}
+
+.colors-label {
+    font-size: 15px;
+    /* "Colors" yazısının stilini ayarlayabilirsiniz */
+    margin-top: 70px;
+    /* Yazı ile kutular arasına boşluk eklemek isterseniz */
+    font-weight: var(--black-color);
+    /* İhtiyaca göre kalın yapabilirsiniz */
+}
+
+.color-boxes {
+    display: flex;
+}
+
+.color-box {
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    background-color: #F35858;
+}
+
+.blue {
+    background-color: #587AD4;
+}
+
+.black {
+    background-color: #212737;
+}
+
+.lilac {
+    background-color: #D028D3;
+}
+
+.add-to-cart-box,
+.checkout-box {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 60px;
+    padding: 20px 20px;
+
+}
+
+.checkout-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5A7AB9;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #5A7AB9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.checkout-link:hover {
+    background-color: #5A7AB9;
+}
+
+.add-to-cart-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #5A7AB9;
+    text-decoration: none;
+    border: 1px solid #5A7AB9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-link:hover {
+    background-color: #5A7AB9;
+    color: #5A7AB9;
+}
+
+section {
+    padding: 80px 13% 70px;
+}
+
+.footer {
+    background-color: #6B84C4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.footer-content ul {
+    list-style: none;
+    /* Noktaları kaldırır */
+    padding: 0;
+    /* Boşlukları kaldırır */
+    margin: 0;
+    /* Boşlukları kaldırır */
+}
+
+
+.footer-content h4 {
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+}
+
+.footer-content li {
+    margin-bottom: 14px;
+}
+
+.footer-content li a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Logo'yu dikeyde ve yatayda ortalar */
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: 60px;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.header {
+    padding: 1.5 2rem;
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.product .box-container .box .img {
+    font-size: 3.4px;
+}
+
+
+.header .navbar .active {
+    right: 3rem;
+}
+
+.header .navbar .a {
+    color: #FFFFFF;
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+
+}

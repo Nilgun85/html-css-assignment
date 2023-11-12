@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+    --main-color: #FFFFFF;
+    --black-color: #000000;
+    --blue-color: #6B84C4;
+    --border: solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FFFFFF;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: lightgray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    background-color: #FFFFFF;
+    /* Sayfa arka plan rengi */
+}
+
+.thank-you-message {
+    text-align: center;
+}
+
+.thank-you-message h1 {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 0px;
+
+}
+
+.check-logo {
+    width: 200px;
+    /* Logo genişliğini ayarlayabilirsiniz */
+    height: auto;
+    margin-top: 20px;
+    /* Logo ile yazı arasındaki boşluğu ayarlayabilirsiniz */
+}
+
+.order-info {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.go-to-home-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-to-home-box a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #6B84C4;
+    /* Box background color */
+    color: #FFFFFF;
+    /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.go-to-home-box a:hover {
+    background-color: #6B84C4;
+    /* Hover state background color */
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.header {
+    padding: 1.5 2rem;
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.product .box-container .box .img {
+    font-size: 3.4px;
+}
+
+
+.header .navbar .active {
+    right: 3rem;
+}
+
+.header .navbar .a {
+    color: #FFFFFF;
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+
+}

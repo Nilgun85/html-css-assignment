@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+    --main-color: #FFFFFF;
+    --black-color: #000000;
+    --blue-color: #6B84C4;
+    --border: solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: o.2s ease;
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FFFFFF;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: lightgray;
+
+
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.heading {
+    color: #6B84C4;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+
+
+/*! header start */
+.header .logo img {
+    height: 5rem;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.header {
+    background-color: #6B84C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 0rem;
+    border-radius: 0rem;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    border-bottom: 0.1 solid transparent;
+}
+
+
+.header .navbar .active {
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .button button {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+
+.container {
+    display: flex;
+
+}
+
+.left {
+    flex: 1;
+
+}
+
+
+
+.outside-header-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #000000;
+    /* margin-left: 900px; */
+}
+
+.jacket-description {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #000000;
+    line-height: 1.5;
+    /* margin-left: 900px; */
+}
+
+.size-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+#home-text {
+    font-size: 24px;
+    color: lightgray;
+    margin-top: 0;
+}
+
+.fas.fa-angle-left {
+    font-size: 24px;
+    color: lightgray;
+    margin-top: 0;
+}
+
+#product-text {
+    font-size: 20px;
+    color: lightgray;
+    margin-top: 0;
+    /* Home ve Product metinleri daha açık renk */
+}
+
+#jacket-text {
+    font-size: 20px;
+    color: #000000;
+    /* Fjelltripp jacket metni daha koyu renk */
+}
+
+
+
+
+.product-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.product-name {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    /* Ürün adı rengi */
+    font-weight: bold;
+    /* Kalın metin */
+    font-size: 18px;
+    margin-right: 10px;
+    /* Metin büyüklüğü */
+}
+
+.see-more {
+    text-decoration: underline;
+    text-align: right;
+    margin-top: 30px;
+    color: #5A7AB9;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.product-price {
+    color: #2A55C4;
+    /* Fiyat rengi değiştirildi */
+}
+
+.size-boxes {
+    display: flex;
+
+}
+
+.size-box {
+    margin-right: 30px;
+    background-color: #E8EDFB;
+    border: #E8EDFB;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 80px 13% 70px;
+}
+
+
+.footer {
+    background-color: #6B84C4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.footer-content ul {
+    list-style: none;
+    /* Noktaları kaldırır */
+    padding: 0;
+    /* Boşlukları kaldırır */
+    margin: 0;
+    /* Boşlukları kaldırır */
+}
+
+
+.footer-content h4 {
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+}
+
+.footer-content li {
+    margin-bottom: 14px;
+}
+
+.footer-content li a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Logo'yu dikeyde ve yatayda ortalar */
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: 60px;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.header {
+    padding: 1.5 2rem;
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.product .box-container .box .img {
+    font-size: 3.4px;
+}
+
+
+.header .navbar .active {
+    right: 3rem;
+}
+
+.header .navbar .a {
+    color: #FFFFFF;
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+
+}
